@@ -82,31 +82,44 @@ function getFileExtName6($fileName){
 }
 
 /**
- * 输入文件名（可带路径），获取文件的拓展名（之二）
+ * 输入文件名（可带路径），获取文件的拓展名（之七）
  * @param string $fileName 文件的名称（可带路径）
  * @return string 文件的拓展名
  * @author Yuan
  * @time 2018-5-21 15:49:00
  */
-/**
- * 输入文件名（可带路径），获取文件的拓展名（之二）
- * @param string $fileName 文件的名称（可带路径）
- * @return string 文件的拓展名
- * @author Yuan
- * @time 2018-5-21 15:49:00
- */
-/**
- * 输入文件名（可带路径），获取文件的拓展名（之二）
- * @param string $fileName 文件的名称（可带路径）
- * @return string 文件的拓展名
- * @author Yuan
- * @time 2018-5-21 15:49:00
- */
-/**
- * 输入文件名（可带路径），获取文件的拓展名（之二）
- * @param string $fileName 文件的名称（可带路径）
- * @return string 文件的拓展名
- * @author Yuan
- * @time 2018-5-21 15:49:00
- */
+function getFileExtName7($fileName){
+    return strtolower(substr(strrchr($fileName,'.'),1));
+}
 
+/**
+ * 输入文件名（可带路径），获取文件的拓展名（之八）
+ * @param string $fileName 文件的名称（可带路径）
+ * @return string 文件的拓展名
+ * @author Yuan
+ * @time 2018-5-21 15:49:00
+ */
+function getFileExtName8($fileName){
+    return strtolower(pathinfo($fileName)['extension']);
+}
+
+/**
+ * 输入文件名（可带路径），获取文件的拓展名（之九）
+ * @param string $fileName 文件的名称（可带路径）
+ * @return string 文件的拓展名
+ * @author Yuan
+ * @time 2018-5-21 15:49:00
+ */
+function getFileExtName9($fileName){
+    return strtolower(strrev(explode('.',strrev($fileName))[0]));
+}
+/**
+ * 输入文件名（可带路径），获取文件的拓展名（之十）
+ * @param string $fileName 文件的名称（可带路径）
+ * @return string 文件的拓展名
+ * @author Yuan
+ * @time 2018-5-21 15:49:00
+ */
+function getFileExtName10($fileName){
+    //正则反向引用，后补
+}

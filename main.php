@@ -10,4 +10,4 @@ include_once('documentTools.php');
 header('Content-Type:text/html;charset=utf-8');
 echo getFileExtName2('a.php');
 echo '<hr/>';
-echo getFileExtName6('./abc/dse/sde/a.abc');
+echo getFileExtName9('./abc/dse/sde/a.bcc');
